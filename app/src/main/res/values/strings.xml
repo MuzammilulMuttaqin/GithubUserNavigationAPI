@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<resources>
+    <string name="app_name">Github User\'s Search</string>
+    <string name="search_hint">Masukkan kata</string>
+    <string name="followers">Followers</string>
+    <string name="following">Following</string>
+    <string name="repository">Repository</string>
+    <string name="search">Search</string>
+    <string name="tab_1">Followers</string>
+    <string name="tab_2">Following</string>
+    <string name="favorite">Favorite</string>
+    <string name="setting">Setting</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="logo_github">logo github</string>
+    <string name="search_for_the_user_in_the_app_bar_above">search for the user in the app bar above.</string>
+
+</resources>
+
+
