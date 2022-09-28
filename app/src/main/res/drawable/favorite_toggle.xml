@@ -4,5 +4,6 @@
         android:drawable="@drawable/ic_favorite_red"
         android:state_checked="true"/>
     <item
-        android:drawable="@drawable/ic_favorite_grey_24"/>
+        android:drawable="@drawable/ic_favorite_grey_24"
+        android:state_checked="false"/>
 </selector>

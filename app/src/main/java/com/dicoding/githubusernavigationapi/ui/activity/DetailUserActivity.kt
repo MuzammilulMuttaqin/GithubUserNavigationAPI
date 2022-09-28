@@ -40,14 +40,14 @@ class DetailUserActivity : AppCompatActivity() {
         val pref = SettingPreferences.getInstance(dataStore)
         val settingViewModel =
             ViewModelProvider(this, ViewModelFactory(pref))[SettingViewModel::class.java]
-        settingViewModel.getThemeSettings().observe(this,
-            { isDarkModeActive: Boolean ->
-                if (isDarkModeActive) {
-                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
-                } else {
-                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
-                }
-            })
+        settingViewModel.getThemeSettings().observe(this
+        ) { isDarkModeActive: Boolean ->
+            if (isDarkModeActive) {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+            } else {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+            }
+        }
 
         val username = intent.getStringExtra(EXTRA_USERNAME)
         val id = intent.getIntExtra(EXTRA_ID, 0)

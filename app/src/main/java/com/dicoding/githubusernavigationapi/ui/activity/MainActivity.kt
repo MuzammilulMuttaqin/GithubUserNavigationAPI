@@ -74,13 +74,13 @@ class MainActivity : AppCompatActivity() {
             rvUserMain.layoutManager = LinearLayoutManager(this@MainActivity)
             rvUserMain.setHasFixedSize(true)
             rvUserMain.adapter = adapter
-            mainViewModel.getSearchuser().observe(this@MainActivity, {
+            mainViewModel.getSearchuser().observe(this@MainActivity) {
                 if (it != null) {
                     adapter.setList(it)
                     showLoading(false)
 
                 }
-            })
+            }
         }
     }
 
